@@ -49,7 +49,7 @@ sql_cmd = "insert into fruit_load_list values('from streamlit')"
 my_cur.execute(sql_cmd)
 
 import os
-print(sql_cmd)
-os.write(0,sql_cmd.encode() + '0')
-os.write(1,sql_cmd.encode() + '1')
+print(2)
+os.write(0,b'0')
+os.write(1,b'1')
 

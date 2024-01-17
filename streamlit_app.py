@@ -53,5 +53,6 @@ print(2)
 #os.write(0,b'0')
 os.write(1,b'1')
 
+import sys
 sys.stdout.write('3')
 sys.stdout.flush()

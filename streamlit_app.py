@@ -51,4 +51,5 @@ my_cur.execute(sql_cmd)
 import os
 print(sql_cmd)
 import sys
+sys.stdout.write(sql_cmd)
 sys.stdout.flush()

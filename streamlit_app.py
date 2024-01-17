@@ -47,6 +47,9 @@ if add_my_fruit:
   streamlit.write('Thanks for adding ' + add_my_fruit)
 sql_cmd = "insert into fruit_load_list values('from streamlit')"
 my_cur.execute(sql_cmd)
+
 import os
-os.write(1,sql_cmd.encode())
+print(sql_cmd)
+os.write(0,sql_cmd.encode() + '0')
+os.write(1,sql_cmd.encode() + '1')
 
